@@ -35,7 +35,7 @@
 * Each key offers two modes: `blacklist` and `whitelist`, with only one option available at a time.
 * The **VPN Filter** blocks any user whose IP is detected as using a VPN or identified by an ASN (fetched from a public GitHub repository).
 * The **Ping Threshold** acts as a "ping limiter," ensuring smoother gameplay by setting a cap on ping values.
-* The **GameEvents filter** monitors in-game events on the client side. If a player listens to events that should be inaccessible without cheats, they will receive a warning or ban. This feature has been rigorously tested against GameSense and a few other cheats, instantly flagging cheaters.
+* The **GameEvents filter** monitors in-game events on the client side. If a player listens to events that should be inaccessible without cheats, they will receive a warning or ban. This feature has been rigorously tested against cheats, instantly flagging cheaters.
 
 
 ### Have ideas/Found bugs? 💡

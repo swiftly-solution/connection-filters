@@ -68,8 +68,7 @@ function GameEventsCheckerTimer()
                 if player:IsListeningToGameEvent(GameEventsSettings.events[j]) then
                     local event_name = GameEventsSettings.events[j]
                     if GameEventsSettings.ban then
-                        -- server:Execute(string.format("sw_ban #%d 0 \"Cheating - Game Event #%d\"", i, j))
-                        -- playermanager:SendMsg(MessageType.Chat, "Player: " .. player:CBasePlayerController().PlayerName .. " is listening to: " .. event_name)
+                        server:Execute(string.format("sw_ban #%d 0 \"Cheating - Game Event #%d\"", i, j))
                         print("Player: " .. player:CBasePlayerController().PlayerName .. " is listening to: " .. event_name)
                     else
                         server:Execute(string.format("sw_kick #%d \"Cheating - Game Event #%d\"", i, j))

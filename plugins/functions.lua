@@ -65,7 +65,7 @@ function GameEventsCheckerTimer()
         local player = GetPlayer(i)
         if player then
             for j=1,#GameEventsSettings.events do
-                if player:IsListeningToGameEvent(GameEventsSettings.events[j]) then
+                if playerutils:IsListeningToGameEvent(i, GameEventsSettings.events[j]) then
                     local event_name = GameEventsSettings.events[j]
                     if GameEventsSettings.ban then
                         server:Execute(string.format("sw_ban #%d 0 \"Cheating - Game Event #%d\"", i, j))

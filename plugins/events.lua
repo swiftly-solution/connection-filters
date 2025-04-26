@@ -47,8 +47,7 @@ AddEventHandler("OnPlayerConnectFull", function (event)
     checks[tostring(player:GetSteamID())] = 0
 end)
 
-AddEventHandler("OnClientDisconnect", function(event)
-    local playerid = event:GetInt("userid")
+AddEventHandler("OnClientDisconnect", function(event, playerid)
     local player = GetPlayer(playerid)
     if not player then return end
 
